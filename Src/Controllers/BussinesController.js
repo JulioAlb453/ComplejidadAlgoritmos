@@ -16,7 +16,7 @@ class BussinesController {
 
   async loadDataArray() {
     try {
-      const response = await fetch("../assets/bussines.json");
+      const response = await fetch("../Src/assets/bussines.json");
       const data = await response.json();
       console.time("Array Insertion Time");
       const t0 = performance.now();
@@ -35,7 +35,7 @@ class BussinesController {
 
   async loadDataLinkedList() {
     try {
-      const response = await fetch("../assets/bussines.json");
+      const response = await fetch("../Src/assets/bussines.json");
       const data = await response.json();
       const t0 = performance.now();
       data.slice(0, 10000).forEach((item) => {
