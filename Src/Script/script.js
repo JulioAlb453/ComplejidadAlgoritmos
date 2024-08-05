@@ -16,8 +16,11 @@ btnLoadDatasetArray.addEventListener("click", async () => {
 });
 
 btnSorting.addEventListener("click", async () => {
-  const sortTimes = await controller.sortingArray();
+  
+  await controller.sortingArray();
   await controller.sortLinkedList();
+  const sortTimes = await controller.getTimesSorting();
+  
   updateChartsSorting(sortTimes);
 });
 

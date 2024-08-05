@@ -61,11 +61,18 @@ class BussinesController {
     this.sortTimes.arrayRadix = this.sortArrayController.radixSortArray();
   }
 
+  
+
   async sortLinkedList() {
     this.sortLinkedListController.setLinkedList(this.linkedList);
     this.sortTimes.linkedListBuble = this.sortLinkedListController.bubbleSortLinkedList();
     this.sortTimes.linkedListMerge = this.sortLinkedListController.mergeSortLinkedList();
     this.sortTimes.linkedListRadix = this.sortLinkedListController.radixSortLinkedList();
+  }
+
+
+  async getTimesSorting(){
+    return this.sortTimes
   }
 
   async searchArray(cp) {

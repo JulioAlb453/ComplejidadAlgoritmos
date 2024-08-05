@@ -44,6 +44,7 @@ export function updateChartsLoadData(insertionTimes) {
 }
 
 export function updateChartsSorting(sortTimes) {
+    console.log(sortTimes)
   try {
     const sortOptions = {
       series: [
