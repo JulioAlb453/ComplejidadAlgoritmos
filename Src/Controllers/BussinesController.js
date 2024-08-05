@@ -50,6 +50,10 @@ class BussinesController {
     }
   }
 
+  async getInsertionTimes(){
+    return this.insertionTimes;
+  }
+
   async sortingArray() {
     this.sortArrayController.setArray(this.aux);
     this.sortTimes.arrayBuble = this.sortArrayController.bubbleSortArray();
